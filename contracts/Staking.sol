@@ -43,6 +43,7 @@ contract Staking {
     IERC20 public rewardsToken;
     IERC20 public stakingToken;
 
+    // 100 wei per second , calculated for per anum
     uint256 public rewardRate = 100;
     uint256 public lastUpdateTime;
     uint256 public rewardPerTokenStored;
