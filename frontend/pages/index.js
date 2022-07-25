@@ -439,12 +439,16 @@ export default function Home() {
           Staking Contract
         </p>
          <span className={styles.features}>
-          <ul>
-            <li> Sharing of Yield For the no. of shares owned</li>
-            <li>User can deposit their money</li>
-            <li>Some shares are minted according to the value deposited</li>
-            <li>Vault generate some yield by a puropose and the value of share increases</li>
-            <li>user can withdraw the amount by burning those share at any point of time .</li>
+         <ul>
+            <li>Rewards user for staking their tokens in the contract</li>
+            <li>User can withdraw and deposit at an point of time</li>
+            <li>Tokens Earned can be withdrawed any time</li>
+            <li>
+              Rewards are calculated with reward rate and time period staked for
+            </li>
+            <li>
+              The balance and reward earned can be checked at any point of time
+            </li>
           </ul>
         </span>
         <button className={styles.button}>
@@ -468,17 +472,14 @@ export default function Home() {
           Vault Contract
         </p>
          <span className={styles.features}>
-          <ul>
-            <li>Rewards user for staking their tokens in the contract</li>
-            <li>User can withdraw and deposit at an point of time</li>
-            <li>Tokens Earned can be withdrawed any time</li>
-            <li>
-              Rewards are calculated with reward rate and time period staked for
-            </li>
-            <li>
-              The balance and reward earned can be checked at any point of time
-            </li>
+         <ul>
+            <li> Sharing of Yield For the no. of shares owned</li>
+            <li>User can deposit their money</li>
+            <li>Some shares are minted according to the value deposited</li>
+            <li>Vault generate some yield by a puropose and the value of share increases</li>
+            <li>user can withdraw the amount by burning those share at any point of time .</li>
           </ul>
+          
         </span>
         <button className={styles.button}>
           <a
