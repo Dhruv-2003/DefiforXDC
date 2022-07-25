@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import logo from '../assets/logo.png'
 
 export default function Layout({ children }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -22,7 +23,7 @@ export default function Layout({ children }) {
       <header>
         <nav className={styles.navbar}>
           <span className={styles.logo}>
-            <Link href={"/"}>DefiForXDC</Link>
+            <Link href={"/"}><Image src={logo}/></Link>
           </span>
           <ul
             className={
@@ -32,29 +33,38 @@ export default function Layout({ children }) {
             }
           >
             <li className={styles.navitem}>
-              <Link href="/">
-                <a className={styles.navlink}>Home</a>
-              </Link>
-            </li>
-            <li className={styles.navitem}>
-              <Link href="/create">
-                <a className={styles.navlink}>Create</a>
-              </Link>
-            </li>
-            <li className={styles.navitem}>
-              <Link href="/library">
-                <a className={styles.navlink}>Library</a>
-              </Link>
+              <span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/LendingPool.sol"
+                  className={styles.navlink}
+                >
+                  Lending
+                </a>
+              </span>
             </li>
             <li className={styles.navitem}>
               <span>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/Dhruv-2003/DefiforXDC"
+                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Staking.sol"
                   className={styles.navlink}
                 >
-                  GitHub
+                  Staking
+                </a>
+              </span>
+            </li>
+            <li className={styles.navitem}>
+              <span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Vault.sol"
+                  className={styles.navlink}
+                >
+                  Vault
                 </a>
               </span>
             </li>
