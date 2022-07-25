@@ -399,38 +399,64 @@ export default function Home() {
         <div className={styles.xdc}>
           <Image src={xdc} />
         </div>
-        <p className={styles.about}>We have built a collection of DeFi Smart-Contracts for XDC chain</p>
+        <p className={styles.about}>
+          We have built a collection of DeFi Smart-Contracts for XDC chain
+        </p>
 
         <h1 className={styles.contract}>Contracts</h1>
         <hr className={styles.hr} />
-        <p id="lending" className={styles.contract}>Lending Contract</p>
+        <p id="lending" className={styles.contract}>
+          Lending Contract
+        </p>
+
+        <span className={styles.features}>
+          <ul>
+            <li>Create a pool contract that accepts deposit from lenders and borrow money to the borrowers</li>
+            <li>Lenders can lend any amount of money and earn some interest for it.</li>
+            <li>User or borrower can borrow some amount of tokens (limited) , and pay back with interest for some time period.</li>
+            <li>Interest is calculated according the interest rate and borrowing time peroid</li>
+            <li>Lender can withdraw the amount later with extra interest earning</li>
+            <li>Other functions can be called to determine the balance at any point of time , and the rewards earned</li>
+          </ul>
+        </span>
         <button className={styles.button}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/LendingPool.sol"
-              className={styles.navlink}
-            >
-              View on GitHub ↗
-            </a>
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/LendingPool.sol"
+            className={styles.navlink}
+          >
+            View on GitHub ↗
+          </a>
+        </button>
         <span className={styles.code}>
           <pre className="line-numbers">
             <code className="language-jsx">{lending}</code>
           </pre>
         </span>
 
-        <p id="staking"  className={styles.contract}>Staking Contract</p>
+        <p id="staking" className={styles.contract}>
+          Staking Contract
+        </p>
+         <span className={styles.features}>
+          <ul>
+            <li> Sharing of Yield For the no. of shares owned</li>
+            <li>User can deposit their money</li>
+            <li>Some shares are minted according to the value deposited</li>
+            <li>Vault generate some yield by a puropose and the value of share increases</li>
+            <li>user can withdraw the amount by burning those share at any point of time .</li>
+          </ul>
+        </span>
         <button className={styles.button}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Staking.sol"
-              className={styles.navlink}
-            >
-              View on GitHub ↗
-            </a>
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Staking.sol"
+            className={styles.navlink}
+          >
+            View on GitHub ↗
+          </a>
+        </button>
 
         <span className={styles.code}>
           <pre className="line-numbers">
@@ -438,17 +464,32 @@ export default function Home() {
           </pre>
         </span>
 
-        <p id="vault"  className={styles.contract}>Vault Contract</p>
+        <p id="vault" className={styles.contract}>
+          Vault Contract
+        </p>
+         <span className={styles.features}>
+          <ul>
+            <li>Rewards user for staking their tokens in the contract</li>
+            <li>User can withdraw and deposit at an point of time</li>
+            <li>Tokens Earned can be withdrawed any time</li>
+            <li>
+              Rewards are calculated with reward rate and time period staked for
+            </li>
+            <li>
+              The balance and reward earned can be checked at any point of time
+            </li>
+          </ul>
+        </span>
         <button className={styles.button}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Vault.sol"
-              className={styles.navlink}
-            >
-              View on GitHub ↗
-            </a>
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Vault.sol"
+            className={styles.navlink}
+          >
+            View on GitHub ↗
+          </a>
+        </button>
         <span className={styles.code}>
           <pre className="line-numbers">
             <code className="language-jsx">{vault}</code>

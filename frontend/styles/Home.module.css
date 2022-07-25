@@ -161,6 +161,11 @@
   color: #7effe0;
 }
 
+.features {
+  text-align: start;
+  /* color: #7effe0; */
+
+}
 
 
 @media (min-width: 768px) {
