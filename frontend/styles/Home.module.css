@@ -1,12 +1,14 @@
 
 .main {
-  min-height: 92vh;
+  margin: 50px;
+  /* min-height: 92vh; */
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  text-align: center;
 }
 
 .navbar {
@@ -97,45 +99,27 @@
   background-color: #ffffff;
 }
 
+.hr {
+  margin: 10px;
+  width: 70%;
+}
+
 .button {
   /* font-family: "Open Sans", sans-serif; */
   font-size: 18px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
-  color: rgb(104, 255, 237);
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  background: #3afffc;
-  border: 3px solid;
+  background: #7effe0;
   padding: 0.25em 0.5em;
-  /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
-    5px 5px 0px 0px; */
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-top: 15px;
+  /* margin-top: 12px; */
   border-radius: 10px;
-  animation: background 10s linear infinite;
-  background: linear-gradient(
-    60deg,
-    rgb(255, 196, 186) 0%,
-    rgb(255, 169, 154) 10%,
-    #16fffb 20%,
-    rgba(82, 175, 183, 1) 30%,
-    rgb(100, 203, 221) 40%,
-    rgb(255, 118, 221) 50%,
-    rgb(127, 129, 231) 60%,
-    rgb(88, 200, 204) 70%,
-    #96aafd 80%,
-    rgba(199, 201, 88, 1) 90%,
-    rgba(199, 201, 88, 1) 100%
-  );
-  background-size: 1000% 100%;
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: black;
-  /* width: 100%;  */
+  border: 4px solid rgb(0, 0, 0);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .button:active {
@@ -143,6 +127,41 @@
   top: 5px;
   left: 5px;
 }
+
+.xdc {
+  max-width: 400px;
+}
+
+.about {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7effe0;
+}
+
+.code {
+  overflow: scroll;
+  text-align: justify;
+  padding: 30px;
+  max-width: 100%;
+  /* max-width: 1000px; */
+  max-height: 500px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  font-size: 14px;
+}
+
+.code pre {
+  width: 1000px;
+}
+
+.contract {
+  font-size: 35px;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  color: #7effe0;
+}
+
+
 
 @media (min-width: 768px) {
   .button {
@@ -154,6 +173,10 @@
   /* .connect {
     visibility: hidden;
   } */
+
+  .code {
+    max-width: 100%;
+  }
 
   .footer a {
     margin: 2px;

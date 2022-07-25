@@ -35,9 +35,9 @@ export default function Layout({ children }) {
             <li className={styles.navitem}>
               <span>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/LendingPool.sol"
+                //   target="_blank"
+                //   rel="noopener noreferrer"
+                  href="#lending"
                   className={styles.navlink}
                 >
                   Lending
@@ -47,9 +47,9 @@ export default function Layout({ children }) {
             <li className={styles.navitem}>
               <span>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Staking.sol"
+                //   target="_blank"
+                //   rel="noopener noreferrer"
+                  href="#staking"
                   className={styles.navlink}
                 >
                   Staking
@@ -59,9 +59,9 @@ export default function Layout({ children }) {
             <li className={styles.navitem}>
               <span>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/Dhruv-2003/DefiforXDC/blob/main/contracts/Vault.sol"
+                //   target="_blank"
+                //   rel="noopener noreferrer"
+                  href="#vault"
                   className={styles.navlink}
                 >
                   Vault
